@@ -1,7 +1,7 @@
 
 <h1 align="center">😈 Enfer Multi-Tool 😈</h1> 
 <p align="center">
-  <img src="https://img.shields.io/github/v/release/jordanbardella/Enfer-MULTITOOLS?label=Version&color=a80505">
+  <img src="https://img.shields.io/github/v/release/jordanbardella/Enfer-MULTITOOLS?label=1.0&color=a80505">
   <img src="https://img.shields.io/github/stars/jordanbardella/Enfer-MULTITOOLS?style=flat&label=Stars&color=a80505">
   <img src="https://img.shields.io/github/repo-size/jordanbardella/Enfer-MULTITOOLS?label=Size&color=a80505">
   <img src="https://img.shields.io/github/languages/top/jordanbardella/Enfer-MULTITOOLS?color=a80505">
