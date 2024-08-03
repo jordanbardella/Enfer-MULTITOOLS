@@ -42,11 +42,6 @@
 <h3>12. GithubGetEmail</h3>
 <p>Retrieves email addresses of Github users.</p>
 
-<h2>Usage</h2>
-<p>
-    Each tool can be launched individually via the command line. Here is an example command to launch the <code>RemoteDesktop</code> tool:
-</p>
-<pre><code>./enfer --remote-desktop</code></pre>
 
 <h2>Prerequisites</h2>
 <ul>
@@ -56,26 +51,14 @@
 <p>To install the dependencies, run:</p>
 <pre><code>pip install -r requirements.txt</code></pre>
 
-<h2>Contributing</h2>
-<p>
-    We welcome all contributions! Please submit pull requests and report issues on our <a href="https://github.com/your-repo">GitHub page</a>.
-</p>
-
-<h2>Roadmap</h2>
-<ul>
-    <li>Add new features to expand the capabilities of existing tools.</li>
-    <li>Improve the user interface for a better experience.</li>
-    <li>Integrate additional modules for security and information gathering.</li>
-</ul>
 
 <h2>License</h2>
 <p>
     This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for more details.
 </p>
-
 <hr>
 <p>
-    We are excited to share this tool with you and look forward to your feedback and contributions. This is just the beginning, and we have many updates planned to enrich and enhance this multi-tool.
+    We are excited to share this tool with you. This is just the beginning, and we have many updates planned to enrich and enhance this multi-tool.
 </p>
 </body>
 </html>
