@@ -1,0 +1,9 @@
+tempmail-python
+requests
+colorama
+pystyle
+beautifulsoup4
+pywebview
+asyncio
+aiohttp
+py7zr
