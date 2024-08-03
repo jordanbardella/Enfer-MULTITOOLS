@@ -57,8 +57,5 @@
     This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for more details.
 </p>
 <hr>
-<p>
-    We are excited to share this tool with you. This is just the beginning, and we have many updates planned to enrich and enhance this multi-tool.
-</p>
 </body>
 </html>
