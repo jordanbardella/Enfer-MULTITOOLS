@@ -6,40 +6,40 @@
     </p>
 <h2>🌟Features</h2>
 
-<h3>💻 RemoteDesktop</h3>
+- <h3>💻 RemoteDesktop</h3>
 <p>Allows you to access and control remote computers via the RDP protocol.</p>
 
-<h3>🌐 CensysCLI</h3>
+- <h3>🌐 CensysCLI</h3>
 <p>Uses the Censys API to perform security searches and network analyses.</p>
 
-<h3>🙍‍♂️ DoxTracker</h3>
+- <h3>🙍‍♂️ DoxTracker</h3>
 <p>A tool for tracking leaked personal information.</p>
 
-<h3>📱 PhoneLookup</h3>
+- <h3>📱 PhoneLookup</h3>
 <p>Enables you to search for information about phone numbers.</p>
 
-<h3>🗃️ UsernameChecker</h3>
+- <h3>🗃️ UsernameChecker</h3>
 <p>Checks the availability of a username across multiple online platforms.</p>
 
-<h3>🛡️ CVEScanner</h3>
+- <h3>🛡️ CVEScanner</h3>
 <p>Scans systems for known CVE vulnerabilities using shodan.</p>
 
-<h3>🔍 WebVulnScanner</h3>
+- <h3>🔍 WebVulnScanner</h3>
 <p>Performs vulnerability scans on websites.</p>
 
-<h3>🔒 Hash</h3>
+- <h3>🔒 Hash</h3>
 <p>Generates hashes from text strings.</p>
 
-<h3>🔓 UnHash</h3>
+- <h3>🔓 UnHash</h3>
 <p>Attempts to decrypt hashes if possible.</p>
 
-<h3>🔎 SearchScrapeFivem</h3>
+- <h3>🔎 SearchScrapeFivem</h3>
 <p>Scrapes specific information from the Fivem with scraping list.</p>
 
-<h3>📄 ScrapeOF</h3>
+- <h3>📄 ScrapeOF</h3>
 <p>Scrapes OF data.</p>
 
-<h3>📧 GithubGetEmail</h3>
+- <h3>📧 GithubGetEmail</h3>
 <p>Retrieves email addresses of Github users.</p>
 
 
