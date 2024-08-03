@@ -34,7 +34,7 @@
 <p>Attempts to decrypt hashes if possible.</p>
 
 - <h3>🔎 SearchScrapeFivem</h3>
-<p>Scrapes specific information from the Fivem with scraping list.</p>
+<p>Scrapes specific information from the Fivem with scraping list (update every week).</p>
 
 - <h3>📄 ScrapeOF</h3>
 <p>Scrapes OF data.</p>
