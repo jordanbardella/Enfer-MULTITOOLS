@@ -1,4 +1,3 @@
-tempmail-python
 requests
 colorama
 pystyle
