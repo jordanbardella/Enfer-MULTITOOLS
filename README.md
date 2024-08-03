@@ -1,10 +1,17 @@
-<html>
-<body>
-    <h1>😈 · ENFER Multi-Tools</h1>
-    <p>
-        ENFER Multi-Tools is a powerful set of tools designed for various tasks, ranging from information gathering to cybersecurity. This project is currently at version 1.0, and we plan to release many updates to add new features and enhance existing ones.
-    </p>
+
+<h1 align="center">😈 Enfer Multi-Tool 😈</h1> 
+<p align="center">
+  <img src="https://img.shields.io/github/v/release/jordanbardella/Enfer-MULTITOOLS?label=Version&color=a80505">
+  <img src="https://img.shields.io/github/stars/jordanbardella/Enfer-MULTITOOLS?style=flat&label=Stars&color=a80505">
+  <img src="https://img.shields.io/github/repo-size/jordanbardella/Enfer-MULTITOOLS?label=Size&color=a80505">
+  <img src="https://img.shields.io/github/languages/top/jordanbardella/Enfer-MULTITOOLS?color=a80505">
+    
+<img align="center" src="https://previews.dropbox.com/p/thumb/ACVVyXJGgE8NZetzrjMFDalPQ0LYiLKLJtjrcf8i3N8opvtfrRlu4ZN19WF9crstu_Sf-2GpTPQyp21MyaacYcGYXKgmPSaji3O9V1WRQcIESfNBdYvXjArMLccC1CV0YhVNTuSxzvwUcDr81tZ8FzedzEdhUG5Gj5sah382WtTsHi3govzGlW2YQzQjVcyRoGaovOYlMQOzeT5ktrQp-JO0ChRFDoxc6Dye3dbH5zcH5RXkf2KDkQ-m3VZ8n_gWXj__ZF49qB_5t1psrggUEcqeSptFNMA9-PMF_-HUbWkq9jo1TMFGRcTzin6dbucFwvp4wBxjvSntGRD4WE8i4DlI/p.png" width="99999px">
+</p>
 <h3>⭐ Don't forget to set the repository to "Star" !! ⬆️</h3>
+<p>
+    ENFER Multi-Tools is a powerful set of tools designed for various tasks, ranging from information gathering to cybersecurity. This project is currently at version 1.0, and we plan to release many updates to add new features and enhance existing ones.
+</p>
 <h2>🌟Features</h2>
 
 - <h3>💻 RemoteDesktop</h3>
@@ -57,6 +64,3 @@
 <p>
     This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for more details.
 </p>
-<hr>
-</body>
-</html>
