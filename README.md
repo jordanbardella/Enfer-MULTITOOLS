@@ -1,3 +1,4 @@
+<html>
 <body>
     <h1>ENFER Multi-Tools</h1>
     <p>
@@ -78,3 +79,4 @@
         We are excited to share this tool with you and look forward to your feedback and contributions. This is just the beginning, and we have many updates planned to enrich and enhance this multi-tool.
     </p>
 </body>
+</html>
