@@ -59,7 +59,7 @@
 <p>To install the dependencies, run:</p>
 <pre><code>pip install -r requirements.txt</code></pre>
 
-<h1>⚠️・Terms of use:</h1>
+<h2>⚠️・Terms of use:</h1>
 <p>
 ENFER MULTITOOLS has been developed exclusively for educational purposes. This project is designed with positive intentions and is meant for personal use only. By utilizing ENFER MULTITOOLS, you accept full responsibility for any potential consequences resulting from its use.
 </p>
