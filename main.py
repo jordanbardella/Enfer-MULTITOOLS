@@ -48,6 +48,9 @@ def scrapeof():
 def githubemail():
     subprocess.run(["python", "tools/githubemail.py"])
     
+def sqliscan():
+    subprocess.run(["python", "tools/sqliscan.py"])
+    
 logo = r + f'''
            ███████╗███╗   ██╗███████╗███████╗██████╗ 
            ██╔════╝████╗  ██║██╔════╝██╔════╝██╔══██╗│Version : 1.0
@@ -64,7 +67,7 @@ def menu():
     ║   ({b}01{r}) > RemoteDesktop             ║ ║   ({b}10{r}) > SearchScrapeFivem          ║ ║   ({b}19{r}) > N/A                          ║
         ({b}02{r}) > CensysCLI                       ({b}11{r}) > ScrapeOF                         ({b}20{r}) > N/A
         ({b}03{r}) > DoxTracker                      ({b}12{r}) > GithubGetEmail                   ({b}21{r}) > N/A
-        ({b}04{r}) > PhoneLookup                     ({b}13{r}) > N/A                              ({b}22{r}) > N/A
+        ({b}04{r}) > PhoneLookup                     ({b}13{r}) > SqliScan                         ({b}22{r}) > N/A
         ({b}05{r}) > UsernameChecker                 ({b}14{r}) > N/A                              ({b}23{r}) > N/A
         ({b}06{r}) > CVEScanner                      ({b}15{r}) > N/A                              ({b}24{r}) > N/A
         ({b}07{r}) > WebVulnScanner                  ({b}16{r}) > N/A                              ({b}25{r}) > N/A
@@ -100,6 +103,7 @@ try:
         '10': ('SearchScrapeFivem', searchfivem),
         '11': ('ScrapeOF', scrapeof),
         '12': ('GithubGetEmail', githubemail),
+        '13': ('SqliScanner', sqliscan),
     }
 
     title, cf = options.get(choice, (None, None))
