@@ -13,7 +13,7 @@ y = Fore.YELLOW
 def menu():
     subprocess.run(["python", "main.py"])
 
-vulnerable_endpoints = {
+vulnendpoints = {
     "XSS": [
         "/<script>alert('XSS')</script>",
         "/%3Cscript%3Ealert('XSS')%3C/script%3E",
@@ -941,10 +941,10 @@ logo = r + f'''
 '''
 ascii = pystyle.Center.XCenter(logo)
 
-def check_vulnerabilities(url, proxy=None):
+def cvuln(url, proxy=None):
     os.system('cls' if os.name == 'nt' else 'clear')
     print(ascii)
-    scan_types = list(vulnerable_endpoints.keys())
+    scan_types = list(vulnendpoints.keys())
     menu_text = f"{r}╔═══                                           ═══╗\n"
     for i, scan_type in enumerate(scan_types):
         menu_text += f"  {Fore.CYAN}{i + 1}. {scan_type}{Style.RESET_ALL}\n"
@@ -956,19 +956,19 @@ def check_vulnerabilities(url, proxy=None):
     selected_index = int(selected_option) - 1 if selected_option.isdigit() else -1
     if selected_index < 0 or selected_index >= len(scan_types):
         print(ascii)
-        error_text = "[!] Invalid scan type selection."
-        box_width = len(error_text) + 2
+        errtext = "[!] Invalid scan type selection."
+        box_width = len(errtext) + 2
 
         text = pystyle.Center.XCenter(f"""{r}
         ╔{'═' * box_width}╗
-        {r}  {error_text}  {r}
+        {r}  {errtext}  {r}
         ╚{'═' * box_width}╝
         """)
         print(text)
         input(f"{r}Press any key to return to the menu.")
         menu()
     selected_scan_type = scan_types[selected_index]
-    endpoints = vulnerable_endpoints[selected_scan_type]
+    endpoints = vulnendpoints[selected_scan_type]
 
     color = {
         "XSS": Fore.YELLOW,
@@ -1014,7 +1014,6 @@ def check_vulnerabilities(url, proxy=None):
     input(f"{r}Press any key to return to the menu.")
     menu()
 
-# Main function
 def main():
     init(autoreset=True)  
 
@@ -1025,7 +1024,7 @@ def main():
     if proxy_enabled:
         proxy_url = input("Enter the proxy URL (including scheme and port): ")
         proxy = {"http": proxy_url}
-    check_vulnerabilities(url, proxy)
+    cvuln(url, proxy)
 
 if __name__ == "__main__":
     main()

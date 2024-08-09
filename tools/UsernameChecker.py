@@ -24,9 +24,9 @@ def check_twitter(username):
     resp = requests.get(url, headers=headers)
 
     if resp.status_code == 404:
-        return f"""[0;32m[TWITTER]   : {username} available or banned[0m"""
+        return f"""[0;32m[TWITTER]   : available or banned[0m"""
     else:
-        return f"""[0;31m[TWITTER]   : {username} not available[0m"""
+        return f"""[0;31m[TWITTER]   : not available[0m"""
         
 ##############################################################################################################################################################################
 # Discord Username Checker Function 
@@ -41,9 +41,9 @@ def check_discord(username):
     data = resp.json()
 
     if data.get("username") == username:
-        return f"""[0;32m[DISCORD]   : {username} available[0m"""
+        return f"""[0;32m[DISCORD]   : available[0m"""
     else:
-        return f"""[0;31m[DISCORD]   : {username} not available[0m"""
+        return f"""[0;31m[DISCORD]   : not available[0m"""
         
 ##############################################################################################################################################################################
 # Youtube Username Checker Function 
@@ -54,9 +54,9 @@ def check_youtube(username):
     resp = requests.get(url)
 
     if resp.status_code == 200:
-        return f"""[0;31m[YOUTUBE]   : {username} not available[0m"""
+        return f"""[0;31m[YOUTUBE]   : not available[0m"""
     else:
-        return f"""[0;32m[YOUTUBE]   : {username} available[0m"""
+        return f"""[0;32m[YOUTUBE]   : available[0m"""
         
 ##############################################################################################################################################################################
 # Github Username Checker Function 
@@ -73,9 +73,9 @@ def check_github(username):
     resp = requests.get(user_url, headers=headers)
 
     if resp.status_code == 404:
-        return f"""[0;32m[GITHUB]    : {username} available[0m"""
+        return f"""[0;32m[GITHUB]    : available[0m"""
     elif resp.status_code == 200:
-        return f"""[0;31m[GITHUB]    : {username} not available[0m"""
+        return f"""[0;31m[GITHUB]    : not available[0m"""
         
 ##############################################################################################################################################################################
 # Tiktok Username Checker Function 
@@ -91,16 +91,16 @@ def check_tiktok(username):
     resp = requests.get(url, headers=headers)
 
     if "stats" in resp.text:
-        return f"""[0;31m[TIKTOK]    : {username} not available[0m"""
+        return f"""[0;31m[TIKTOK]    : not available[0m"""
     else:
-        return f"""[0;32m[TIKTOK]    : {username} available[0m"""
+        return f"""[0;32m[TIKTOK]    : available[0m"""
 
 ##############################################################################################################################################################################
 # Instagram Username Checker Function 
 ##############################################################################################################################################################################
 
 def check_insta(username):
-    sessionid = '61761726340%3AEclHYEAdJbZF3p%3A13%3AAYfI5Tv2qZF5CYymHaulgEdPTf3U_28UKnDeH2gqrw'
+    sessionid = '61761726340%3AN5vEoDu5wK7vol%3A16%3AAYcEEtNSSYhp_am3aLhy7siLrmHMYCjFLqNMFJog7g'
 
     def get_fb_dtsg(sessionid):
         cookies = {'sessionid': sessionid}
@@ -133,9 +133,9 @@ def check_insta(username):
 
             ID = json.loads(response.text.replace("for (;;);", ""))
             ID = str(ID["payload"]["payloads"][f"/{username}"]).split("{'id': '")[1].split("', 'profile_pic_url'")[0]
-            return f"""[0;31m[INSTAGRAM] : {username} not available[0m"""
+            return f"""[0;31m[INSTAGRAM] : not available[0m"""
         except IndexError as index_error:
-            return f"""[0;32m[INSTAGRAM] : {username} available[0m"""
+            return f"""[0;32m[INSTAGRAM] : available[0m"""
         except Exception as e:
             return f"""[0;31m[ERROR]     : {e}[0m"""
             
@@ -157,15 +157,16 @@ result4 = check_tiktok(search)
 result5 = check_insta(search)
 result6 = check_twitter(search)
 
+
 result = f"""{r}
-╔═══                                     ═══╗
+╔═══                                ═══╗
 ║   {result1}        {r}║
     {result2}
     {result3}
     {result4}
     {result5}
 {r}║   {result6}  {r}║
-╚═══                                     ═══╝
+╚═══                                ═══╝
 """
 re = pystyle.Center.XCenter("\n" + result)
 print(re + "\n")

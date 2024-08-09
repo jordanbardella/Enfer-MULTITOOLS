@@ -8,11 +8,12 @@ import pystyle
 pc_username = os.getlogin()
 r = Fore.RED
 b = Fore.BLUE
+y = Fore.YELLOW
 
 def menu():
     subprocess.run(["python", "main.py"])
 
-print(f'{r}┌──<{pc_username}@ENFER>─[~]')
+print(f'{r}┌──<{pc_username}@ENFER>─[~] {y}(Enter Username)')
 username = input(f'└──╼ $ {b}').lstrip("0")
 url = f"https://api.github.com/users/{username}/events/public"
 response = requests.get(url)
