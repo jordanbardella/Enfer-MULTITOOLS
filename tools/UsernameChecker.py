@@ -190,7 +190,7 @@ result = f"""{r}
   {result4}
   {result5}
   {result6}
-  {result7}       
+  {result7}      {r} 
 ╚═══                             ═══╝
 """
 re = pystyle.Center.XCenter("\n" + result)
