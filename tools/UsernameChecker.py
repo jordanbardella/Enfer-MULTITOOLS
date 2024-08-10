@@ -85,7 +85,6 @@ def check_roblox(username):
     url = f"https://users.roblox.com/v1/usernames/users"
 
     headers = CaseInsensitiveDict()
-    headers["authority"] = "www.tiktok.com"
     headers["user-agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 OPR/105.0.0.0"
 
     data = {
