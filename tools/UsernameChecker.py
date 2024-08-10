@@ -78,6 +78,29 @@ def check_github(username):
         return f"""[0;31m[GITHUB]    : not available[0m"""
         
 ##############################################################################################################################################################################
+# Roblox Username Checker Function 
+##############################################################################################################################################################################
+
+def check_roblox(username):
+    url = f"https://users.roblox.com/v1/usernames/users"
+
+    headers = CaseInsensitiveDict()
+    headers["authority"] = "www.tiktok.com"
+    headers["user-agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 OPR/105.0.0.0"
+
+    data = {
+        "usernames": [username],
+        "excludeBannedUsers": True
+    }
+    
+    resp = requests.get(url, headers=headers, json=data)
+
+    if "data" in resp.text:
+        return f"""[0;31m[ROBLOX]    : not available[0m"""
+    else:
+        return f"""[0;32m[ROBLOX]    : available[0m"""
+        
+##############################################################################################################################################################################
 # Tiktok Username Checker Function 
 ##############################################################################################################################################################################
 
@@ -156,17 +179,19 @@ result3 = check_github(search)
 result4 = check_tiktok(search)
 result5 = check_insta(search)
 result6 = check_twitter(search)
+result7 = check_roblox(search)
 
 
 result = f"""{r}
-╔═══                                ═══╗
-║   {result1}        {r}║
-    {result2}
-    {result3}
-    {result4}
-    {result5}
-{r}║   {result6}  {r}║
-╚═══                                ═══╝
+╔═══                             ═══╗
+  {result1}       
+  {result2}
+  {result3}
+  {result4}
+  {result5}
+  {result6}
+  {result7}       
+╚═══                             ═══╝
 """
 re = pystyle.Center.XCenter("\n" + result)
 print(re + "\n")
