@@ -108,8 +108,6 @@ def sf(fp, s):
         print(text + "\n")
         input(f"{r}Press any key to return to the menu.")
         menu()
-        
-        
 
 url = "https://www.dropbox.com/scl/fi/5mbw8tdlqhtpi6cz2xcbu/players.7z?rlkey=v5nqm87injcmyb9lfpdaajnzk&st=mv7l7wc8&dl=1"
 rarf = "players.rar"
@@ -117,25 +115,25 @@ cd = os.getcwd()
 ep = cd
 
 if not os.path.exists("players.txt"):
-    print("players.txt n'existe pas. Téléchargement en cours...")
+    print("Players.txt does not exist. Download in progress...")
     try:
         subprocess.run(f'curl -L -s -o {rarf} "{url}"', check=True, shell=True)
-        print("Téléchargement terminé.")
+        print("Download completed.")
         
-        print("Extraction en cours...")
+        print("Extraction in progress...")
         try:
             with py7zr.SevenZipFile(rarf, mode='r') as archive:
                 archive.extractall(path=ep)
-            print(f"Extraction terminée dans le dossier '{ep}'.")
+            print(f"Extraction completed in folder '{ep}'.")
             os.remove(rarf)
         except py7zr.exceptions.ArchiveError as e:
-            print(f"Erreur lors de l'extraction : {e}")
+            print(f"Error during extraction: {e}")
         except Exception as e:
-            print(f"Erreur inattendue lors de l'extraction : {e}")
+            print(f"Unexpected error during extraction: {e}")
     except subprocess.CalledProcessError as e:
-        print(f"Erreur lors du téléchargement du fichier : {e}")
+        print(f"Error downloading file: {e}")
     except Exception as e:
-        print(f"Erreur inattendue : {e}")
+        print(f"Unexpected error: {e}")
 else:
     print(f'┌──<{pc_username}@ENFER>─[~] {y}(Enter LicenseID, DiscordID or Name)')
     s = input(f'{r}└──╼ $ {b}').lstrip("0")
@@ -154,4 +152,6 @@ else:
         print(text + "\n")
         input(f"{r}Press any key to return to the menu.")
         menu()
+
+    fp = os.path.join(ep, "players.txt")
     sf(fp, s)
