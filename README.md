@@ -10,7 +10,7 @@
 </p>
 <h3>⭐ Don't forget to set the repository to "Star" !! ⬆️</h3>
 <p>
-    ENFER Multi-Tools is a powerful set of tools designed for various tasks, ranging from information gathering to cybersecurity. This project is currently at version 1.0, and we plan to release many updates to add new features and enhance existing ones.
+    ENFER Multi-Tools is a powerful set of tools designed for various tasks, ranging from information gathering to cybersecurity. This project is currently at version 2.0, and we plan to release many updates to add new features and enhance existing ones.
 </p>
 <h2>🌟Features</h2>
 
